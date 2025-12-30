@@ -1,0 +1,47 @@
+# OpenCode Vibe theme for Ghostty
+# A modern dark theme with vibrant accents
+
+# Background colors (lightened from original)
+background = #181818
+foreground = #d4d4d4
+
+# Cursor colors
+cursor-color = #fab283
+cursor-text = #181818
+
+# Selection colors
+selection-background = #fab283
+selection-foreground = #181818
+
+# ANSI color palette (16 colors)
+# Black
+palette = 0=#181818
+palette = 8=#666666
+
+# Red
+palette = 1=#e06c75
+palette = 9=#e06c75
+
+# Green
+palette = 2=#7fd88f
+palette = 10=#7fd88f
+
+# Yellow
+palette = 3=#e5c07b
+palette = 11=#e5c07b
+
+# Blue
+palette = 4=#5c9cf5
+palette = 12=#5c9cf5
+
+# Magenta
+palette = 5=#9d7cd8
+palette = 13=#9d7cd8
+
+# Cyan
+palette = 6=#56b6c2
+palette = 14=#56b6c2
+
+# White
+palette = 7=#d4d4d4
+palette = 15=#d4d4d4
