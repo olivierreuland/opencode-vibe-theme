@@ -1,10 +1,10 @@
 # OpenCode Vibe Theme
 
-I use [Zed](https://zed.dev/), [Ghostty](https://ghostty.org/), and [OpenCode](https://opencode.ai/). I like most of OpenCode's self-titled theme, but prefer a more tame background colour for example. So here is my vibe-coded-with-some-hand-crafted-adjustments answer. 
+I use [Zed](https://zed.dev/), [Ghostty](https://ghostty.org/), [VS Code](https://code.visualstudio.com/), and [OpenCode](https://opencode.ai/). I like most of OpenCode's self-titled theme, but prefer a more tame background colour for example. So here is my vibe-coded-with-some-hand-crafted-adjustments answer. 
 
 ## Features
 
-- Available in dark and light variants for Zed, Ghostty, and OpenCode
+- Available in dark and light variants for Zed, Ghostty, VS Code, and OpenCode
 - Dark background with carefully balanced contrast
 - Vibrant accent colors that pop without eye strain
 - Consistent color scheme across all applications
@@ -28,6 +28,41 @@ The theme uses these key colors:
 See [docs/COLOR_PALETTE.md](docs/COLOR_PALETTE.md) for the complete color reference, including git diff colors, terminal ANSI colors, and all UI element mappings.
 
 ## Installation
+
+### Quick Install (All Applications)
+
+Use the automated installer to install themes for all supported applications:
+
+```bash
+./install.sh
+```
+
+Or force overwrite existing themes:
+
+```bash
+./install.sh --force
+```
+
+### Selective Installation
+
+Install themes for specific applications only:
+
+```bash
+# Install only VS Code and Ghostty
+./install.sh --only vscode,ghostty
+
+# Install all except Zed
+./install.sh --skip zed
+
+# Force reinstall only OpenCode
+./install.sh --only opencode --force
+```
+
+**Available applications:** `zed`, `ghostty`, `vscode` (or `vs-code`), `opencode`
+
+### Manual Installation
+
+If you prefer to install manually or need platform-specific instructions, see the individual sections below.
 
 ### Zed
 
@@ -84,6 +119,35 @@ Or for the light theme:
 3. Restart Ghostty or reload the configuration
 
 **Note**: Ghostty uses a single global configuration, so themes apply system-wide rather than per-project.
+
+### VS Code
+
+#### Via Marketplace (Coming Soon)
+
+Once published, install directly from VS Code:
+1. Open Extensions (Ctrl+Shift+X / Cmd+Shift+X)
+2. Search for "OpenCode Vibe"
+3. Click Install
+
+#### Manual Installation
+
+1. Copy the theme directory to VS Code extensions:
+   ```bash
+   # macOS/Linux
+   cp -r themes/vscode ~/.vscode/extensions/opencode-vibe-1.0.0
+   
+   # Windows
+   xcopy /E /I themes\vscode %USERPROFILE%\.vscode\extensions\opencode-vibe-1.0.0
+   ```
+
+2. Reload VS Code (Ctrl+Shift+P / Cmd+Shift+P → "Developer: Reload Window")
+
+3. Select the theme:
+   - Press Ctrl+K Ctrl+T (or Cmd+K Cmd+T on macOS)
+   - Search for "OpenCode Vibe" or "OpenCode Vibe Light"
+   - Select it to apply
+
+See [themes/vscode/README.md](themes/vscode/README.md) for detailed installation options and recommended settings.
 
 ### OpenCode
 

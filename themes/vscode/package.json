@@ -1,0 +1,41 @@
+{
+  "name": "opencode-vibe",
+  "displayName": "OpenCode Vibe",
+  "description": "A vibrant yet comfortable color scheme for developers, featuring carefully balanced contrast and semantic color choices",
+  "version": "1.0.0",
+  "publisher": "olivierreuland",
+  "author": "Olivier Reuland",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olivierreuland/opencode-vibe-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "light theme",
+    "opencode",
+    "vibe"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "OpenCode Vibe",
+        "uiTheme": "vs-dark",
+        "path": "./opencode-vibe-dark.json"
+      },
+      {
+        "label": "OpenCode Vibe Light",
+        "uiTheme": "vs",
+        "path": "./opencode-vibe-light.json"
+      }
+    ]
+  }
+}
